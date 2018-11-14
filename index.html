@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans">
+    <link rel="stylesheet" type="text/css" href="css/normalize.css">
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <title></title>
+  </head>
+  <body>
+    <div class="container">
+
+      <!-- Header Section -->
+      <header>
+        <h1><strong>Your</strong>App<sup>TM</sup></h1>
+        <div class="user">
+          <img class="header-icon" src="icons/icon-bell.svg" alt="bell icon">
+          <div class="user-avatar">
+            <img class="profile" src="images/Jason-128x128.jpg" alt="profile picture of Jason Tesar">
+            <p class="user-name">Jason Tesar</p>
+          </div>
+        </div>
+      </header>
+
+      <!-- Navigation Section -->
+      <nav>
+        <img class="nav-icon" src="icons/icon-dashboard.svg" alt="dashboard icon">
+        <img class="nav-icon" src="icons/icon-members.svg" alt="members icon">
+        <img class="nav-icon" src="icons/icon-visits.svg" alt="visits icon">
+        <img class="nav-icon" src="icons/icon-settings.svg" alt="settings icon">
+      </nav>
+
+      <!-- Main Content Section -->
+      <main>
+
+        <!-- Dashboard Section -->
+        <div class="dashboard">
+          <h2>dashboard</h2>
+          <div class="dashboard-search-bg">
+            <input class="dashboard-search" name="dashboard-search" type="search" placeholder="Search">
+            <div class="mag-bg">
+              <img class="search-icon" src="icons/mag-glass.svg" alt="magnifying glass icon">
+            </div>
+          </div>
+          <div class="alert">
+            <p><strong>Alert</strong> - This is your alert message!</p>
+            <button class="btn-alert-x"><strong>&times;</strong></button>
+          </div>
+        </div>
+
+        <!-- Traffic Section -->
+        <div class="traffic widget">
+          <h3>traffic</h3>
+          <div class="time-interval">
+            <div class="hourly">
+              <h4>hourly</h4>
+            </div>
+            <div class="daily">
+              <h4>daily</h4>
+            </div>
+            <div class="weekly">
+              <h4>weekly</h4>
+            </div>
+            <div class="monthly">
+              <h4>monthly</h4>
+            </div>
+          </div>
+          <canvas id="traffic"><canvas>
+        </div>
+
+        <!-- Daily Traffic Section -->
+        <div class="daily-traffic widget">
+          <h3>daily traffic</h3>
+          <canvas id="daily-traffic"><canvas>
+        </div>
+
+        <!-- Mobile Users Section -->
+        <div class="mobile-users widget">
+          <h3>mobile users</h3>
+          <canvas id="mobile-users"><canvas>
+        </div>
+
+        <!-- Social Stats Section -->
+        <div class="social-stats widget">
+          <h3>social stats</h3>
+          <div class="social-card">
+            <div class="social-icon">
+              <img class="soc-icon" src="icons/icon-twitter.svg" alt="twitter icon">
+            </div>
+            <div class="social-results">
+              <h3>twitter</h3>
+              <p>10,345</p>
+            </div>
+          </div>
+          <div class="social-card">
+            <div class="social-icon">
+              <img class="soc-icon" src="icons/icon-facebook.svg" alt="facebook icon">
+            </div>
+            <div class="social-results">
+              <h3>facebook</h3>
+              <p>8,739</p>
+            </div>
+          </div>
+          <div class="social-card">
+            <div class="social-icon">
+              <img class="soc-icon" src="icons/icon-google-plus.svg" alt="google plus icon">
+            </div>
+            <div class="social-results">
+              <h3>google&plus;</h3>
+              <p>2,530</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- New Members Section -->
+        <div class="new-members widget">
+          <h3>new members</h3>
+          <div class="member-card"><!-- Member 1 -->
+            <div>
+              <img class="profile-pic" src="images/member-1.jpg" alt="member1 profile pic">
+            </div>
+            <div class="member-info">
+              <h4>victoria chambers</h4>
+              <p>victoria.chambers80@example.com</p>
+              <div class="member-date">
+                <h4>10/15/15</h4>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="member-card"><!-- Member 2 -->
+            <div>
+              <img class="profile-pic" src="images/member-2.jpg" alt="member1 profile pic">
+            </div>
+            <div class="member-info">
+              <h4>dale byrd</h4>
+              <p>dale.byrd52@example.com</p>
+              <div class="member-date">
+                <h4>10/15/15</h4>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="member-card"><!-- Member 3 -->
+            <div>
+              <img class="profile-pic" src="images/member-3.jpg" alt="member1 profile pic">
+            </div>
+            <div class="member-info">
+              <h4>dawn wood</h4>
+              <p>dawnwood16@example.com</p>
+              <div class="member-date">
+                <h4>10/15/15</h4>
+              </div>
+            </div>
+          </div>
+          <hr>
+          <div class="member-card"><!-- Member 4 -->
+            <div>
+              <img class="profile-pic" src="images/member-4.jpg" alt="member1 profile pic">
+            </div>
+            <div class="member-info">
+              <h4>dan oliver</h4>
+              <p>danoliver82@example.com</p>
+              <div class="member-date">
+                <h4>10/15/15</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Recent Activity Section -->
+        <div class="recent-activity widget">
+          <h3>recent activity</h3>
+          <div class="activity-card"><!-- Member 1 -->
+            <div>
+              <img class="profile-pic" src="images/member-1.jpg" alt="member1 profile pic">
+            </div>
+            <div class="activity-info">
+              <p>Victoria Chambers commented on YourApp's SEO Tips</p>
+              <p class="time">4 hours ago</p>
+            </div>
+            <div class="right-angle">&gt;</div>
+          </div>
+          <hr>
+          <div class="member-card"><!-- Member 2 -->
+            <div>
+              <img class="profile-pic" src="images/member-2.jpg" alt="member1 profile pic">
+            </div>
+            <div class="activity-info">
+              <p>Dale Byrd likes the post Facebook's changes for 2018</p>
+              <p class="time">5 hours ago</p>
+            </div>
+            <div class="right-angle">&gt;</div>
+          </div>
+          <hr>
+          <div class="member-card"><!-- Member 3 -->
+            <div>
+              <img class="profile-pic" src="images/member-3.jpg" alt="member1 profile pic">
+            </div>
+            <div class="activity-info">
+              <p>Dawn Wood commented on Facebook's changes for 2018</p>
+              <p class="time">5 hours ago</p>
+            </div>
+            <div class="right-angle">&gt;</div>
+          </div>
+          <hr>
+          <div class="member-card"><!-- Member 4 -->
+            <div>
+              <img class="profile-pic" src="images/member-4.jpg" alt="member1 profile pic">
+            </div>
+            <div class="activity-info">
+              <p>Dan Oliver posted on YourApp's SEO Tips</p>
+              <p class="time">1 day ago</p>
+            </div>
+            <div class="right-angle">&gt;</div>
+          </div>
+        </div>
+
+        <!-- Message User Section -->
+        <div class="message-user widget">
+          <h3>message user</h3>
+          <div class="user-fields">
+            <input class="user-search" name="user-search" type="search" placeholder="Search for User">
+            <textarea class="user-message" name="user_message" placeholder="Message for User"></textarea>
+            <button class="message-user-send" name="message-user-send" type="submit">send</button>
+          </div>
+        </div>
+
+        <!-- Settings Section -->
+        <div class="settings widget">
+          <h3>settings</h3>
+          <div class="message-fields">
+            <div class="toggles">
+              <h3>send email notifications</h3>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <div class="toggles">
+              <h3>set profile to public</h3>
+              <label class="switch">
+                <input type="checkbox">
+                <span class="slider round"></span>
+              </label>
+            </div>
+            <select name="timezones" class="timezones">
+              <option value="">Select Your Time Zone</option>
+              <option value="HST">Hawaii-Aleutian Standard (HST)</option>
+              <option value="AKST">Alaskan Standard (AKST)</option>
+              <option value="PST">Pacific Standard (PST)</option>
+              <option value="MST">Mountain Standard (MST)</option>
+              <option value="CST">Central Standard (CST)</option>
+              <option value="EST">Eastern Standard (EST)</option>
+            </select>
+            <div class="buttons">
+              <button class="settings-save" name="settings-save" type="submit">save</button>
+              <button class="settings-cancel" name="settings-cancel" type="button">cancel</button>
+            </div>
+          </div>
+        </div>
+      </main>
+
+    <!-- Scripts   -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.3/Chart.js"></script>
+    <script src="js/charts.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
