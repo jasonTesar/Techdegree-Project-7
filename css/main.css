@@ -1,5 +1,7 @@
 /* Primary Grid Layout Styles -----------------------------*/
 .container {
+  max-width: 1024px;
+  margin: 0 auto;
   padding: 0;
   display: grid;
   grid-template-rows: auto;
@@ -381,6 +383,8 @@ main {
 
 .new-members {
   grid-area: new-members;
+  display: flex;
+  flex-direction: column;
 }
 
 .member-card {
@@ -439,6 +443,8 @@ main {
 
 .recent-activity {
   grid-area: recent-activity;
+  display: flex;
+  flex-direction: column;
 }
 
 .activity-card {
@@ -711,7 +717,7 @@ input:checked + .slider:after {
 
 @media (min-width: 768px) {
   .container {
-    grid-template-columns: auto 1fr 1fr;
+    grid-template-columns: auto minmax(344px, 944px) minmax(344px, 944px);
     grid-template-areas:
       "header header header"
       "nav main main";
@@ -798,6 +804,7 @@ input:checked + .slider:after {
   .widget {
     padding: 10px 20px;
     text-align: left;
+
   }
   .traffic {
     flex-direction: row;
@@ -908,17 +915,9 @@ input:checked + .slider:after {
   .activity-info {
     width: 100%;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
   }
   .comment-time {
-    display: flex;
-    flex-direction: column;
-  }
-  .recent-activity {
-    display: flex;
-    flex-direction: column;
-  }
-  .new-members {
     display: flex;
     flex-direction: column;
   }
