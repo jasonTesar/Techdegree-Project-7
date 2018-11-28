@@ -6,7 +6,8 @@ const messageFieldsHeight = document.querySelector('.message-fields').clientHeig
 const userFields = document.querySelector('.user-fields');
 const dashboardSearch = document.querySelector('.dashboard-search');
 const magBG = document.querySelector('.mag-bg');
-
+const userSearch = document.querySelector('.user-search');
+const userMessage = document.querySelector('.user-message');
 
 // Removes the alert when "X" is clicked
 alert.addEventListener('click', () => {
@@ -32,3 +33,17 @@ dashboardSearch.addEventListener('blur', () => {
 
 // Sets height of user-fields div equal to height of message-fields div
 userFields.style.height = messageFieldsHeight + 'px';
+
+// Listens for submit event on any child element in user-fields (through event bubbling)
+userFields.addEventListener('submit', (e) => {
+  e.preventDefault();
+  let user = userSearch.value;
+  let message = userMessage.value;
+  if (user == '') {
+    window.alert('You haven\'t entered a user.');
+  } else if (message == '') {
+    window.alert('You haven\'t entered a message.');
+  } else {
+    window.alert('Your message has been delivered.');
+  };
+});
