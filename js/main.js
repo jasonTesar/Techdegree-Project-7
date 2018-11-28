@@ -39,7 +39,9 @@ userFields.addEventListener('submit', (e) => {
   e.preventDefault();
   let user = userSearch.value;
   let message = userMessage.value;
-  if (user == '') {
+  if (user == '' && message == '') {
+    window.alert('You haven\'t entered a user or message.');
+  } else if (user == '') {
     window.alert('You haven\'t entered a user.');
   } else if (message == '') {
     window.alert('You haven\'t entered a message.');
