@@ -45,5 +45,5 @@ userFields.addEventListener('submit', (e) => {
     window.alert('You haven\'t entered a message.');
   } else {
     window.alert('Your message has been delivered.');
-  };
+  }
 });
